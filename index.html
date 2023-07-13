@@ -13,6 +13,11 @@
     <title>Bananas</title>
     <link rel="icon" href="https://uploads-ssl.webflow.com/61ed190630d5c4cc66be42e8/61fdfa4ea9397e208f149928_Frame.png"
         type="image/x-icon" />
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- END Connect CSS -->
+
 </head>
 <!-- End of head -->
 
@@ -20,15 +25,15 @@
 
 <body>
     <!-- Start of navigation -->
-    <section id="desktop-nav">
+    <section id="nav-menu">
         <nav>
             <span class="bananas-company-logo">
                 <a href="#">
-                    <img src="https://uploads-ssl.webflow.com/61ed190630d5c4cc66be42e8/61ed190630d5c41166be4305_Bananas%20Logo%20Temp%201.svg"
+                    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252872680-5d72e9ad-a5cc-47c7-a02f-3dc386d9ea2e.svg"
                         alt="Bananas logo">
                 </a>
             </span>
-            <span class="nav-menu">
+            <span class="desktop-nav">
                 <ul>
                     <li>
                         <a href="#">Tentang Kami</a>
@@ -52,22 +57,27 @@
                     SAMPAI DALAM <br>
                     HITUNGAN MENIT <br>
                 </h1>
-                <p>BANANAS!</p>
-                <p>
+                <p class="card-item-header">BANANAS!</p>
+                <p class="p-header">
                     Masa depan telah tiba! Kamu tidak perlu pergi ke supermarket lagi. Kami akan
                     mengirimkan belanja kebutuhan harian kamu termasuk buah-buahan dan sayuran
                     segar dalam kualitas terbaik langsung ke rumahmu. Dalam hitungan menit dan dengan
                     harga terbaik.
                 </p>
-                <p>DOWNLOAD SEKARANG JUGA!</p>
-                <div class="dowload-wrapper">
+                <p class="p-title-bold centered-content">DOWNLOAD SEKARANG JUGA!</p>
+                <div class="dowload-wrapper centered-content">
                     <figure>
-                        <img>
-                        <figcaption></figcaption>
+                        <a href="https://play.google.com/store/apps/details?id=com.banana.consumer" target="_blank">
+                            <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873497-7a26c9a3-a162-47bc-8a4f-e9ea81fcc1fc.svg"
+                                alt="Google Play Store Download button">
+                        </a>
                     </figure>
                     <figure>
-                        <img>
-                        <figcaption></figcaption>
+                        <a href="https://apps.apple.com/id/app/bananas-groceries-in-10-mins/id1603625450?l=id"
+                            target="_blank">
+                            <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873508-ae11569e-b718-4d31-9f5d-59b8dd5c1023.svg"
+                                alt="iOS App Store Download button">
+                        </a>
                     </figure>
                 </div>
             </div>
@@ -87,8 +97,8 @@
     <!-- Start of main -->
     <main>
         <!-- Section about-us -->
-        <section id="about-us">
-            <div class="container">
+        <section id="about-us" class="dark-background padding-50">
+            <div class="container container-about-us">
                 <aside id="about-content-1">
                     <figure>
                         <img src="https://i.ibb.co/NNnpVmS/61ed2a8d6843c791ca0d2237-Indonesia-First.png"
@@ -107,7 +117,13 @@
                         seluruh Indonesia.
                     </p>
                 </article>
-                <article id="about-content-3">
+                <aside id="about-content-3">
+                    <figure>
+                        <img src="https://i.ibb.co/Yczddsj/61ed2d40626e46819f6f5d54-Arrives-In-Minutes.png"
+                            alt="Delivery man delivering bags of groceries.">
+                    </figure>
+                </aside>
+                <article id="about-content-4">
                     <h2>
                         SAMPAI DALAM <br>
                         HITUNGAN MENIT
@@ -119,12 +135,6 @@
                         tingkat kebersihan dan keamanan yang tinggi.
                     </p>
                 </article>
-                <aside id="about-content-4">
-                    <figure>
-                        <img src="https://i.ibb.co/Yczddsj/61ed2d40626e46819f6f5d54-Arrives-In-Minutes.png"
-                            alt="Delivery man delivering bags of groceries.">
-                    </figure>
-                </aside>
                 <aside id="about-content-5">
                     <figure>
                         <img src="https://i.ibb.co/xm9Tgr6/61ed2e531f73b14e38661e02-Thousands-of-Products.png"
@@ -150,12 +160,12 @@
 
         <!-- Section service-area -->
         <section id="service-area">
-            <div class="container">
-                <div class="service-title">
+            <div class="container container-service-area">
+                <div class="service-title centered-content">
                     <h2>AREA LAYANAN BANANAS</h2>
                     <p>Kami terus menambahkan area baru dengan sangat cepat!</p>
                 </div>
-                <div class="service-list">
+                <div class="service-list centered-content">
                     <div class="card-wrapper">
                         <div class="card-item">
                             <p>KELAPA GADING</p>
@@ -263,7 +273,7 @@
                             <p>BINTARO&nbsp;SEKTOR 1</p>
                         </div>
                         <div class="card-item">
-                            <div>LEBAK&nbsp;BULUS</div>
+                            <p>LEBAK&nbsp;BULUS</p>
                         </div>
                         <div class="card-item">
                             <p>FATMAWATI</p>
@@ -273,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-add">
+                <div class="service-add centered-content">
                     <a href="#">DAFTARKAN LOKASI KAMU</a>
                 </div>
             </div>
@@ -281,12 +291,12 @@
         <!-- END Section service-area -->
 
         <!-- Section join-us -->
-        <section id="join-us">
-            <div class="container">
+        <section id="join-us" class="padding-50">
+            <div class="container container-join-us">
                 <aside id="join-content-1">
                     <figure>
-                        <img>
-                        <figcaption></figcaption>
+                        <img src="https://i.ibb.co/M5Jz15z/61ed4176ab9f752cabb18031-Join-Bananas.png"
+                            alt="A hand holding a banana coming out of a yellow screen.">
                     </figure>
                 </aside>
                 <article id="join-content-2">
@@ -303,7 +313,13 @@
                     </p>
                     <a href="">Hubungi Kami</a>
                 </article>
-                <article id="join-content-3">
+                <aside id="join-content-3">
+                    <figure>
+                        <img src="https://i.ibb.co/F5gFNW1/61ed418e0c0971b1c9643dd2-Be-Our-Trooper-p-500.png"
+                            alt="A lady holding a vegetable.">
+                    </figure>
+                </aside>
+                <article id="join-content-4">
                     <h2>
                         MENJADI MITRA KAMI
                     </h2>
@@ -316,16 +332,10 @@
                     </p>
                     <a href="">Hubungi Kami</a>
                 </article>
-                <aside id="join-content-4">
-                    <figure>
-                        <img>
-                        <figcaption></figcaption>
-                    </figure>
-                </aside>
                 <aside id="join-content-5">
                     <figure>
-                        <img>
-                        <figcaption></figcaption>
+                        <img src="https://i.ibb.co/3CFqmbW/61ed41a479941210bab155bd-Partner-with-Us-p-500.png"
+                            alt="A table top with a bunch of grocery items laid out.">
                     </figure>
                 </aside>
                 <article id="join-content-6">
@@ -344,10 +354,10 @@
         <!-- END Section join-us -->
 
         <!-- Section dowload-app -->
-        <section id="download-app">
+        <section id="download-app" class="yellow-background padding-50">
             <div class="container">
-                <article class="download-description">
-                    <h2>
+                <article class="download-description centered-content">
+                    <h2 class="">
                         MAU BELANJA <br>
                         KEBUTUHAN HARIAN KAMU <br>
                         SAMPAI DALAM <br>
@@ -356,14 +366,14 @@
                     <p>
                         DOWNLOAD BANANAS SEKARANG!
                     </p>
-                    <div class="dowload-wrapper">
+                    <div class="dowload-wrapper centered-content">
                         <figure>
-                            <img>
-                            <figcaption></figcaption>
+                            <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873497-7a26c9a3-a162-47bc-8a4f-e9ea81fcc1fc.svg"
+                                alt="Google Play Store Download button">
                         </figure>
                         <figure>
-                            <img>
-                            <figcaption></figcaption>
+                            <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873508-ae11569e-b718-4d31-9f5d-59b8dd5c1023.svg"
+                                alt="iOS App Store Download button">
                         </figure>
                     </div>
                 </article>
@@ -374,15 +384,24 @@
     <!-- END of main -->
 
     <!-- Start of footer -->
-    <footer>
+    <footer class="container container-footer dark-background">
         <!-- Section social-media -->
         <section id="social-media">
             <figure>
-                <img>
-                <figcaption></figcaption>
+                <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252872680-5d72e9ad-a5cc-47c7-a02f-3dc386d9ea2e.svg"
+                    alt="Bananas logo" height="50%" width="50%">
             </figure>
             <div class="social-media-wrapper">
-
+                <span class="centered-content">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                    </a>
+                </span>
+                <span class="centered-content">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                </span>
             </div>
         </section>
         <!-- END Section social-media -->
@@ -437,33 +456,33 @@
 
         <!-- Section download-now -->
         <section id="download-now">
-            <h3>DOWNLOAD SEKARANG</h3>
-            <div class="dowload-wrapper">
+            <div class="dowload-wrapper dowload-wrapper-footer centered-content">
+                <h3>DOWNLOAD SEKARANG</h3>
                 <figure>
-                    <img>
-                    <figcaption></figcaption>
+                    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873497-7a26c9a3-a162-47bc-8a4f-e9ea81fcc1fc.svg"
+                        alt="Google Play Store Download button">
                 </figure>
                 <figure>
-                    <img>
-                    <figcaption></figcaption>
+                    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873508-ae11569e-b718-4d31-9f5d-59b8dd5c1023.svg"
+                        alt="iOS App Store Download button">
                 </figure>
                 <figure>
-                    <img>
-                    <figcaption></figcaption>
+                    <img src="https://i.ibb.co/4Z0b6Ns/61f19ba829c110d9cfc36b33-Bananas-QR-Code.png"
+                        alt="A QR Code that links to Bananas mobile app store listings.">
                 </figure>
             </div>
         </section>
         <!-- END Section download-now -->
 
         <!-- Section footer-caption -->
-        <section id="footer-caption">
+        <section id="footer-caption" class="centered-content">
             Copyright © 2022 PT Banana Niaga Natura. All rights reserved.
         </section>
         <!-- END Section footer-caption -->
 
     </footer>
     <!-- END of footer -->
-
+    <script src="https://kit.fontawesome.com/47688137e9.js" crossorigin="anonymous"></script>
 </body>
 <!-- End of body -->
 
