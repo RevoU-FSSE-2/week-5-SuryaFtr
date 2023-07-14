@@ -380,11 +380,6 @@ header {
     font-weight: 600;
     font-size: 1em;
     padding: 5px;
-    transition: ease-in-out 0.5s;
-}
-
-.container-join-us article a:hover {
-    opacity: 0.7;
 }
 
 #join-content-1 {
