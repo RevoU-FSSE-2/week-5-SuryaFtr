@@ -379,8 +379,7 @@ header {
     color: #13b4f9;
     font-weight: 600;
     font-size: 1em;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
     transition: ease-in-out 0.5s;
 }
 
