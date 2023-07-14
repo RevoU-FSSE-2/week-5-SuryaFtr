@@ -1,0 +1,151 @@
+.mobile-mode {
+    display: none;
+}
+
+.desktop-nav {
+    display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+    .header-description {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .mobile-mode {
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding-top: 70px;
+        margin: 0;
+    }
+
+    .header-description {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 0.9em;
+    }
+
+    .header-description h1 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .card-item-header {
+        font-size: 1em;
+        margin-bottom: 6px;
+    }
+
+    #about-us,
+    #join-us {
+        font-size: 0.9em;
+    }
+
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    #social-media figure {
+        margin-top: 10px;
+    }
+
+    #social-media figure img {
+        width: 80px;
+    }
+
+    .social-media-wrapper span:nth-of-type(1) {
+        grid-column: 1;
+    }
+
+    .social-media-wrapper span:nth-of-type(2) {
+        grid-column: 3;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        margin: 0;
+        padding: 75px 2em 0 2em;
+    }
+
+    .header-container {
+        grid-template-columns: auto;
+    }
+
+    .header-description {
+        margin: 0;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: auto;
+        padding: 0 2em;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #about-content-3 {
+        order: 3;
+    }
+
+    #about-content-4 {
+        order: 4;
+    }
+
+    #join-content-3 {
+        order: 3;
+    }
+
+    #join-content-4 {
+        order: 4;
+    }
+
+    .card-item {
+        font-size: 0.9em;
+        margin: 5px 5px;
+        padding: 0px 10px;
+    }
+
+    .container-join-us {
+        gap: 20px;
+    }
+
+    .container-join-us article {
+        text-align: center;
+        margin-bottom: 3em;
+    }
+
+    .button-yellow {
+        padding: 10px 32px;
+        font-weight: 500;
+        font-size: 0.9em;
+    }
+
+    #social-media,
+    #bananas-link,
+    #general-info,
+    #download-now,
+    #footer-caption {
+        grid-column: 1 / 6 span;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+    }
+}
