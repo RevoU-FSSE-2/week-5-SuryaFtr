@@ -29,7 +29,7 @@
     <section id="nav-menu">
         <nav>
             <span class="bananas-company-logo centered-content">
-                <a href="#">
+                <a href="#hero">
                     <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252872680-5d72e9ad-a5cc-47c7-a02f-3dc386d9ea2e.svg"
                         alt="Bananas logo">
                 </a>
@@ -37,24 +37,30 @@
             <span class="desktop-nav">
                 <ul>
                     <li>
-                        <a href="#">Tentang Kami</a>
+                        <a href="#about-us">Tentang Kami</a>
                     </li>
                     <li>
-                        <a href="#">Area Layanan</a>
+                        <a href="#service-area">Area Layanan</a>
                     </li>
                 </ul>
             </span>
             <span class="mobile-mode right-content">
-                <button class="mobile-nav-button">
+                <a href="javascript:void(0);" class="mobile-nav-button" onclick="mobileMenu()">
                     <i class="fa-solid fa-bars fa-2xl"></i>
-                </button>
+                </a>
             </span>
         </nav>
     </section>
+    <section id="mobile-nav">
+        <a href="#about-us">Tentang Kami</a>
+        <a href="#service-area">Area Layanan</a>
+    </section>
+
+
     <!-- End of navigation -->
 
     <!-- Start of header -->
-    <header>
+    <header id="hero">
         <section class="header-container">
             <div class="header-description">
                 <h1>
@@ -287,7 +293,7 @@
                     </div>
                 </div>
                 <div class="service-add centered-content">
-                    <a href="#" class="button-yellow">DAFTARKAN LOKASI KAMU</a>
+                    <a href="#join-us" class="button-yellow">DAFTARKAN LOKASI KAMU</a>
                 </div>
             </div>
         </section>
@@ -314,7 +320,7 @@
                         tinggi, dan ingin membuat dampak yang terasa, kamu
                         cocok untuk kesempatan ini!
                     </p>
-                    <a href="">Hubungi Kami <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="careers@bananas.id">Hubungi Kami <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
                 <aside id="join-content-3">
                     <figure>
@@ -333,7 +339,7 @@
                         fokus untuk memberikan kebahagiaan kepada
                         pelanggan kami!
                     </p>
-                    <a href="">Hubungi Kami <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="troopers@bananas.id">Hubungi Kami <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
                 <aside id="join-content-5">
                     <figure>
@@ -350,7 +356,7 @@
                         berkerjasama bersama kami agar produk kamu sampai
                         ke tangan konsumen lebih cepat dan lebih baik!
                     </p>
-                    <a href="">Hubungi Kami <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="partnerships@bananas.id">Hubungi Kami <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
             </div>
         </section>
@@ -371,12 +377,17 @@
                     </p>
                     <div class="dowload-wrapper centered-content">
                         <figure>
-                            <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873497-7a26c9a3-a162-47bc-8a4f-e9ea81fcc1fc.svg"
-                                alt="Google Play Store Download button">
+                            <a href="https://play.google.com/store/apps/details?id=com.banana.consumer" target="_blank">
+                                <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873497-7a26c9a3-a162-47bc-8a4f-e9ea81fcc1fc.svg"
+                                    alt="Google Play Store Download button">
+                            </a>
                         </figure>
                         <figure>
-                            <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873508-ae11569e-b718-4d31-9f5d-59b8dd5c1023.svg"
-                                alt="iOS App Store Download button">
+                            <a href="https://apps.apple.com/id/app/bananas-groceries-in-10-mins/id1603625450?l=id"
+                                target="_blank">
+                                <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873508-ae11569e-b718-4d31-9f5d-59b8dd5c1023.svg"
+                                    alt="iOS App Store Download button">
+                            </a>
                         </figure>
                     </div>
                 </article>
@@ -391,17 +402,19 @@
         <!-- Section social-media -->
         <section id="social-media">
             <figure>
-                <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252872680-5d72e9ad-a5cc-47c7-a02f-3dc386d9ea2e.svg"
-                    alt="Bananas logo" height="50%" width="50%">
+                <a href="#hero">
+                    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252872680-5d72e9ad-a5cc-47c7-a02f-3dc386d9ea2e.svg"
+                        alt="Bananas logo" height="50%" width="50%">
+                </a>
             </figure>
             <div class="social-media-wrapper">
                 <span class="centered-content">
-                    <a href="#">
+                    <a href="https://facebook.com/bananasindo">
                         <i class="fa-brands fa-facebook fa-xl"></i>
                     </a>
                 </span>
                 <span class="centered-content">
-                    <a href="#">
+                    <a href="https://www.instagram.com/bananasindonesia/">
                         <i class="fa-brands fa-instagram fa-xl"></i>
                     </a>
                 </span>
@@ -414,22 +427,22 @@
             <h3>BANANAS</h3>
             <ul>
                 <li>
-                    <a href="">Beranda</a>
+                    <a href="#hero">Beranda</a>
                 </li>
                 <li>
-                    <a href="">Karir</a>
+                    <a href="careers@bananas.id" target="_blank">Karir</a>
                 </li>
                 <li>
-                    <a href="">Mitra</a>
+                    <a href="troopers@bananas.id" target="_blank">Mitra</a>
                 </li>
                 <li>
-                    <a href="">Kerjasama</a>
+                    <a href="partnerships@bananas.id" target="_blank">Kerjasama</a>
                 </li>
                 <li>
-                    <a href="">Kebijakan Privasi</a>
+                    <a href="https://www.bananas.id/privacy-policy" target="_blank">Kebijakan Privasi</a>
                 </li>
                 <li>
-                    <a href="">Syarat & Ketentuan</a>
+                    <a href="https://www.bananas.id/terms-conditions" target="_blank">Syarat & Ketentuan</a>
                 </li>
             </ul>
         </section>
@@ -462,12 +475,17 @@
             <div class="dowload-wrapper dowload-wrapper-footer centered-content">
                 <h3>DOWNLOAD SEKARANG</h3>
                 <figure>
-                    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873497-7a26c9a3-a162-47bc-8a4f-e9ea81fcc1fc.svg"
-                        alt="Google Play Store Download button">
+                    <a href="https://play.google.com/store/apps/details?id=com.banana.consumer" target="_blank">
+                        <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873497-7a26c9a3-a162-47bc-8a4f-e9ea81fcc1fc.svg"
+                            alt="Google Play Store Download button">
+                    </a>
                 </figure>
                 <figure>
-                    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873508-ae11569e-b718-4d31-9f5d-59b8dd5c1023.svg"
-                        alt="iOS App Store Download button">
+                    <a href="https://apps.apple.com/id/app/bananas-groceries-in-10-mins/id1603625450?l=id"
+                        target="_blank">
+                        <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127850712/252873508-ae11569e-b718-4d31-9f5d-59b8dd5c1023.svg"
+                            alt="iOS App Store Download button">
+                    </a>
                 </figure>
                 <figure>
                     <img src="https://i.ibb.co/4Z0b6Ns/61f19ba829c110d9cfc36b33-Bananas-QR-Code.png"
@@ -486,6 +504,7 @@
     </footer>
     <!-- END of footer -->
     <script src="https://kit.fontawesome.com/47688137e9.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javasript/style.js"></script>
 </body>
 <!-- End of body -->
 
